@@ -157,32 +157,32 @@ public class MyUtils {
 		List<Map<String, Object>> data = new ArrayList<Map<String, Object>>();
 
 		Map<String, Object> item1 = new HashMap<String, Object>();
-		item1.put("img", R.drawable.profile_icon);
-		item1.put("txt", "热门活动");
+//		item1.put("img", R.drawable.profile_icon);
+		item1.put("txt", "实验名字1-XX月XX日XX时");
 		item1.put("imgEnd", R.drawable.aio_tips_arrow_gray);
 		data.add(item1);
 
 		item1 = new HashMap<String, Object>();
-		item1.put("img", R.drawable.profile_icon);
-		item1.put("txt", "我的新房");
+//		item1.put("img", R.drawable.profile_icon);
+		item1.put("txt", "实验名字2-XX月XX日XX时");
 		item1.put("imgEnd", R.drawable.aio_tips_arrow_gray);
 		data.add(item1);
 
 		item1 = new HashMap<String, Object>();
-		item1.put("img", R.drawable.profile_icon);
-		item1.put("txt", "我的二手房");
+//		item1.put("img", R.drawable.profile_icon);
+		item1.put("txt", "实验名字3-XX月XX日XX时");
 		item1.put("imgEnd", R.drawable.aio_tips_arrow_gray);
 		data.add(item1);
 
 		item1 = new HashMap<String, Object>();
-		item1.put("img", R.drawable.profile_icon);
-		item1.put("txt", "我的租房");
+//		item1.put("img", R.drawable.profile_icon);
+		item1.put("txt", "实验名字4-XX月XX日XX时");
 		item1.put("imgEnd", R.drawable.aio_tips_arrow_gray);
 		data.add(item1);
 
 		item1 = new HashMap<String, Object>();
-		item1.put("img", R.drawable.profile_icon);
-		item1.put("txt", "即时通讯");
+//		item1.put("img", R.drawable.profile_icon);
+		item1.put("txt", "实验名字5-XX月XX日XX时");
 		item1.put("imgEnd", R.drawable.aio_tips_arrow_gray);
 		data.add(item1);
 
