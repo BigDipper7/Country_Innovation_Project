@@ -110,8 +110,6 @@ public class MainActivity extends Activity {
 			}
 		};
 		simpleAdapter1 = new SimpleAdapter(MainActivity.this, MyUtils.getData1(), R.layout.page_1_item_for_linearlayout, new String[] {"txt", "imgEnd"}, new int[] {R.id.textView1, R.id.imageView2});
-//		simpleAdapter2_1 = new SimpleAdapter(MainActivity.this, MyUtils.getData2(), R.layout.page_2_item_for_linearlayout, new String[] {"txt1", "txt2", "imgEnd"}, new int[] {R.id.textView1, R.id.textView2, R.id.imageView2});
-//		simpleAdapter2_2 = new SimpleAdapter(MainActivity.this, MyUtils.getData2(), R.layout.page_2_item_for_linearlayout, new String[] {"txt1", "txt2", "imgEnd"}, new int[] {R.id.textView1, R.id.textView2, R.id.imageView2});
 		simpleAdapter2_1 = new SimpleAdapter(MainActivity.this, MyUtils.getData2_1(), R.layout.page_2_item_for_linearlayout, new String[] {"txt1", "imgEnd"}, new int[] {R.id.textView1, R.id.imageView2});
 		simpleAdapter2_2 = new SimpleAdapter(MainActivity.this, MyUtils.getData2_2(), R.layout.page_2_item_for_linearlayout, new String[] {"txt1", "imgEnd"}, new int[] {R.id.textView1, R.id.imageView2});
 		simpleAdapter3 = new SimpleAdapter(MainActivity.this, MyUtils.getData3(), R.layout.page_3_item_for_linearlayout, new String[] {"img", "txt", "imgEnd"}, new int[] {R.id.imageView1, R.id.textView1, R.id.imageView2});
