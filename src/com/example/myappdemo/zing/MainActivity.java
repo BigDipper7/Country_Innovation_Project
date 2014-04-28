@@ -24,7 +24,7 @@ public class MainActivity extends Activity {
 	private ViewPager viewPager;//ViewPager 
 	private LinearLayout ll1, ll2_1, ll2_2, ll3, ll4;
 	private PagerAdapter pagerAdapter;//Adapter for viewpager 
-	private SimpleAdapter simpleAdapter1, simpleAdapter2_1, simpleAdapter2_2, simpleAdapter3, simpleAdapter4;
+	private SimpleAdapter simpleAdapter1, simpleAdapter2_1, simpleAdapter2_2, simpleAdapter3, simpleAdapter4_1, simpleAdapter4_2;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -113,7 +113,8 @@ public class MainActivity extends Activity {
 		simpleAdapter2_1 = new SimpleAdapter(MainActivity.this, MyUtils.getData2_1(), R.layout.page_2_item_for_linearlayout, new String[] {"txt1", "imgEnd"}, new int[] {R.id.textView1, R.id.imageView2});
 		simpleAdapter2_2 = new SimpleAdapter(MainActivity.this, MyUtils.getData2_2(), R.layout.page_2_item_for_linearlayout, new String[] {"txt1", "imgEnd"}, new int[] {R.id.textView1, R.id.imageView2});
 		simpleAdapter3 = new SimpleAdapter(MainActivity.this, MyUtils.getData3(), R.layout.page_3_item_for_linearlayout, new String[] {"txt", "imgEnd"}, new int[] {R.id.textView1, R.id.imageView2});
-		simpleAdapter4 = new SimpleAdapter(MainActivity.this, MyUtils.getData4(), R.layout.page_4_item_for_linearlayout, new String[] {"img", "txt", "imgEnd"}, new int[] {R.id.imageView1, R.id.textView1, R.id.imageView2});
+		simpleAdapter4_1 = new SimpleAdapter(MainActivity.this, MyUtils.getData4_1(), R.layout.page_4_item_for_linearlayout, new String[] {"txt", "imgEnd"}, new int[] {R.id.textView1, R.id.imageView2});
+		simpleAdapter4_2 = new SimpleAdapter(MainActivity.this, MyUtils.getData4_2(), R.layout.page_4_item_for_linearlayout, new String[] {"txt", "imgEnd"}, new int[] {R.id.textView1, R.id.imageView2});
 		
 		/*
 		 * adapter -> view -> insert in linearlayout
@@ -123,7 +124,8 @@ public class MainActivity extends Activity {
 		GenerateXML.genLinearLayoutItems(ll2_1, simpleAdapter2_1, MainActivity.this);
 		GenerateXML.genLinearLayoutItems(ll2_2, simpleAdapter2_2, MainActivity.this);
 		GenerateXML.genLinearLayoutItems(ll3, simpleAdapter3, MainActivity.this);
-//		GenerateXML.genLinearLayoutItems(ll4, simpleAdapter4, MainActivity.this);
+		GenerateXML.genLinearLayoutItems(ll4, simpleAdapter4_1, MainActivity.this);
+		GenerateXML.genLinearLayoutItems(ll4, simpleAdapter4_2, MainActivity.this);
 	
 		/*
 		 *  set adapter

@@ -13,7 +13,7 @@
             android:id="@+id/textView1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="软件设置"
+            android:text="控制设置"
             android:textAppearance="?android:attr/textAppearanceLarge" />
 
         <FrameLayout

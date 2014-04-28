@@ -189,55 +189,101 @@ public class MyUtils {
 		return data;
 	}
 	
-	public static List<Map<String, Object>> getData4() {
+	public static List<Map<String, Object>> getData4_1() {
 		List<Map<String, Object>> data = new ArrayList<Map<String, Object>>();
 
 		Map<String, Object> item1 = new HashMap<String, Object>();
-		item1.put("img", R.drawable.profile_icon);
-		item1.put("txt", "切换城市");
+//		item1.put("img", R.drawable.profile_icon);
+		item1.put("txt", "工作站控制");
 		item1.put("imgEnd", R.drawable.aio_tips_arrow_gray);
 		data.add(item1);
 
 		item1 = new HashMap<String, Object>();
-		item1.put("img", R.drawable.profile_icon);
-		item1.put("txt", "图片质量设置");
+//		item1.put("img", R.drawable.profile_icon);
+		item1.put("txt", "小型振动台控制");
 		item1.put("imgEnd", R.drawable.aio_tips_arrow_gray);
 		data.add(item1);
 
 		item1 = new HashMap<String, Object>();
-		item1.put("img", R.drawable.profile_icon);
-		item1.put("txt", "即时通讯设置");
+//		item1.put("img", R.drawable.profile_icon);
+		item1.put("txt", "3D打印机控制");
 		item1.put("imgEnd", R.drawable.aio_tips_arrow_gray);
 		data.add(item1);
 
 		item1 = new HashMap<String, Object>();
-		item1.put("img", R.drawable.profile_icon);
-		item1.put("txt", "用户反馈");
+//		item1.put("img", R.drawable.profile_icon);
+		item1.put("txt", "摄像机控制");
 		item1.put("imgEnd", R.drawable.aio_tips_arrow_gray);
 		data.add(item1);
 
-		item1 = new HashMap<String, Object>();
-		item1.put("img", R.drawable.profile_icon);
-		item1.put("txt", "使用帮助");
-		item1.put("imgEnd", R.drawable.aio_tips_arrow_gray);
-		data.add(item1);
+//		item1 = new HashMap<String, Object>();
+////		item1.put("img", R.drawable.profile_icon);
+//		item1.put("txt", "使用帮助");
+//		item1.put("imgEnd", R.drawable.aio_tips_arrow_gray);
+//		data.add(item1);
+//
+//		item1 = new HashMap<String, Object>();
+////		item1.put("img", R.drawable.profile_icon);
+//		item1.put("txt", "关于我们");
+//		item1.put("imgEnd", R.drawable.aio_tips_arrow_gray);
+//		data.add(item1);
+//
+//		item1 = new HashMap<String, Object>();
+////		item1.put("img", R.drawable.profile_icon);
+//		item1.put("txt", "免责声明");
+//		item1.put("imgEnd", R.drawable.aio_tips_arrow_gray);
+//		data.add(item1);
 
-		item1 = new HashMap<String, Object>();
-		item1.put("img", R.drawable.profile_icon);
+		return data;
+	}
+	
+	public static List<Map<String, Object>> getData4_2() {
+		List<Map<String, Object>> data = new ArrayList<Map<String, Object>>();
+
+		Map<String, Object> item1 = new HashMap<String, Object>();
+//		item1.put("img", R.drawable.profile_icon);
 		item1.put("txt", "关于我们");
 		item1.put("imgEnd", R.drawable.aio_tips_arrow_gray);
 		data.add(item1);
 
 		item1 = new HashMap<String, Object>();
-		item1.put("img", R.drawable.profile_icon);
-		item1.put("txt", "免责声明");
+//		item1.put("img", R.drawable.profile_icon);
+		item1.put("txt", "检查更新");
 		item1.put("imgEnd", R.drawable.aio_tips_arrow_gray);
 		data.add(item1);
 
+		item1 = new HashMap<String, Object>();
+//		item1.put("img", R.drawable.profile_icon);
+		item1.put("txt", "软件说明");
+		item1.put("imgEnd", R.drawable.aio_tips_arrow_gray);
+		data.add(item1);
+
+//		item1 = new HashMap<String, Object>();
+////		item1.put("img", R.drawable.profile_icon);
+//		item1.put("txt", "用户反馈");
+//		item1.put("imgEnd", R.drawable.aio_tips_arrow_gray);
+//		data.add(item1);
+//
+//		item1 = new HashMap<String, Object>();
+////		item1.put("img", R.drawable.profile_icon);
+//		item1.put("txt", "使用帮助");
+//		item1.put("imgEnd", R.drawable.aio_tips_arrow_gray);
+//		data.add(item1);
+//
+//		item1 = new HashMap<String, Object>();
+////		item1.put("img", R.drawable.profile_icon);
+//		item1.put("txt", "关于我们");
+//		item1.put("imgEnd", R.drawable.aio_tips_arrow_gray);
+//		data.add(item1);
+//
+//		item1 = new HashMap<String, Object>();
+////		item1.put("img", R.drawable.profile_icon);
+//		item1.put("txt", "免责声明");
+//		item1.put("imgEnd", R.drawable.aio_tips_arrow_gray);
+//		data.add(item1);
+
 		return data;
 	}
-	
-	
 
 	/**
 	 * 设置listview真实高度 解决了scroll view中间listview只显示一行的问题 
