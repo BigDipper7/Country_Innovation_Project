@@ -1,4 +1,4 @@
-package com.example.myappdemo;
+package com.example.myappdemo.zing;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -15,16 +15,16 @@ import android.view.Window;
 import android.widget.LinearLayout;
 import android.widget.SimpleAdapter;
 
-import com.example.myappdemo.Utils.GenerateXML;
-import com.example.myappdemo.Utils.MyUtils;
+import com.example.myappdemo.zing.Utils.GenerateXML;
+import com.example.myappdemo.zing.Utils.MyUtils;
 
 public class MainActivity extends Activity {
 	private List<String>  titleList = new ArrayList<String>();
 	private List<View> viewList = new ArrayList<View>();
 	private ViewPager viewPager;//ViewPager 
-	private LinearLayout ll1, ll2, ll3, ll4;
+	private LinearLayout ll1, ll2_1, ll2_2, ll3, ll4;
 	private PagerAdapter pagerAdapter;//Adapter for viewpager 
-	private SimpleAdapter simpleAdapter1, simpleAdapter2, simpleAdapter3, simpleAdapter4;
+	private SimpleAdapter simpleAdapter1, simpleAdapter2_1, simpleAdapter2_2, simpleAdapter3, simpleAdapter4;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -39,8 +39,8 @@ public class MainActivity extends Activity {
 		 * initialize the page titles
 		 * */
 		String xmlTitle1 = "首页";
-		String xmlTitle2 = "搜索";
-		String xmlTitle3 = "我的租房";
+		String xmlTitle2 = "实验";
+		String xmlTitle3 = "数据统计";
 		String xmlTitle4 = "更多";
 		titleList.add(xmlTitle1);
 		titleList.add(xmlTitle2);
@@ -65,7 +65,8 @@ public class MainActivity extends Activity {
 		 * */
 		viewPager = (ViewPager) findViewById(R.id.viewpager);
 		ll1 = (LinearLayout) page1.findViewById(R.id.linearLayout1);
-		ll2 = (LinearLayout) page2.findViewById(R.id.linearLayout1);
+		ll2_1 = (LinearLayout) page2.findViewById(R.id.linearLayout1);
+		ll2_2 = (LinearLayout) page2.findViewById(R.id.linearLayout2);
 		ll3 = (LinearLayout) page3.findViewById(R.id.linearLayout1);
 		ll4 = (LinearLayout) page4.findViewById(R.id.linearLayout1);
 		
@@ -109,7 +110,10 @@ public class MainActivity extends Activity {
 			}
 		};
 		simpleAdapter1 = new SimpleAdapter(MainActivity.this, MyUtils.getData1(), R.layout.page_1_item_for_linearlayout, new String[] {"txt", "imgEnd"}, new int[] {R.id.textView1, R.id.imageView2});
-		simpleAdapter2 = new SimpleAdapter(MainActivity.this, MyUtils.getData2(), R.layout.page_2_item_for_linearlayout, new String[] {"txt1", "txt2", "imgEnd"}, new int[] {R.id.textView1, R.id.textView2, R.id.imageView2});
+//		simpleAdapter2_1 = new SimpleAdapter(MainActivity.this, MyUtils.getData2(), R.layout.page_2_item_for_linearlayout, new String[] {"txt1", "txt2", "imgEnd"}, new int[] {R.id.textView1, R.id.textView2, R.id.imageView2});
+//		simpleAdapter2_2 = new SimpleAdapter(MainActivity.this, MyUtils.getData2(), R.layout.page_2_item_for_linearlayout, new String[] {"txt1", "txt2", "imgEnd"}, new int[] {R.id.textView1, R.id.textView2, R.id.imageView2});
+		simpleAdapter2_1 = new SimpleAdapter(MainActivity.this, MyUtils.getData2_1(), R.layout.page_2_item_for_linearlayout, new String[] {"txt1", "imgEnd"}, new int[] {R.id.textView1, R.id.imageView2});
+		simpleAdapter2_2 = new SimpleAdapter(MainActivity.this, MyUtils.getData2_2(), R.layout.page_2_item_for_linearlayout, new String[] {"txt1", "imgEnd"}, new int[] {R.id.textView1, R.id.imageView2});
 		simpleAdapter3 = new SimpleAdapter(MainActivity.this, MyUtils.getData3(), R.layout.page_3_item_for_linearlayout, new String[] {"img", "txt", "imgEnd"}, new int[] {R.id.imageView1, R.id.textView1, R.id.imageView2});
 		simpleAdapter4 = new SimpleAdapter(MainActivity.this, MyUtils.getData4(), R.layout.page_4_item_for_linearlayout, new String[] {"img", "txt", "imgEnd"}, new int[] {R.id.imageView1, R.id.textView1, R.id.imageView2});
 		
@@ -117,10 +121,11 @@ public class MainActivity extends Activity {
 		 * adapter -> view -> insert in linearlayout
 		 * in the meantime  genItems for LinearLayout
 		 * */
-		GenerateXML.genLinearLayoutItems(ll1, simpleAdapter1, MainActivity.this);
-		GenerateXML.genLinearLayoutItems(ll2, simpleAdapter2, MainActivity.this);
-		GenerateXML.genLinearLayoutItems(ll3, simpleAdapter3, MainActivity.this);
-		GenerateXML.genLinearLayoutItems(ll4, simpleAdapter4, MainActivity.this);
+//		GenerateXML.genLinearLayoutItems(ll1, simpleAdapter1, MainActivity.this);
+		GenerateXML.genLinearLayoutItems(ll2_1, simpleAdapter2_1, MainActivity.this);
+		GenerateXML.genLinearLayoutItems(ll2_2, simpleAdapter2_2, MainActivity.this);
+//		GenerateXML.genLinearLayoutItems(ll3, simpleAdapter3, MainActivity.this);
+//		GenerateXML.genLinearLayoutItems(ll4, simpleAdapter4, MainActivity.this);
 	
 		/*
 		 *  set adapter

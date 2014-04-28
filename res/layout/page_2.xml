@@ -9,47 +9,11 @@
         android:layout_height="match_parent"
         android:orientation="vertical" >
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/linearlayout_bg"
-            android:orientation="horizontal" >
-
-            <EditText
-                android:id="@+id/editText1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:ems="10" >
-
-                <requestFocus />
-            </EditText>
-
-            <FrameLayout
-                android:layout_width="10dp"
-                android:layout_height="match_parent" >
-            </FrameLayout>
-
-            <Button
-                android:id="@+id/button1"
-                style="?android:attr/buttonStyleSmall"
-                android:layout_width="40dp"
-                android:layout_height="33dp"
-                android:background="@drawable/btn_search_n"
-                android:text="" />
-
-        </LinearLayout>
-
-        <FrameLayout
-            android:layout_width="match_parent"
-            android:layout_height="10dp" >
-        </FrameLayout>
-
         <TextView
             android:id="@+id/textView1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="搜索选项"
+            android:text="实验选项"
             android:textAppearance="?android:attr/textAppearanceMedium" />
 
         <FrameLayout
@@ -58,9 +22,34 @@
         </FrameLayout>
 
         <LinearLayout
-            android:id="@+id/linearLayout1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:id="@+id/linearLayout1"
+            android:background="@drawable/linearlayout_bg"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="10dp" >
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="摄像头控制"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="10dp" >
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout2"
             android:background="@drawable/linearlayout_bg"
             android:orientation="vertical" >
 

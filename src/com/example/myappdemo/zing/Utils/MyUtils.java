@@ -1,4 +1,4 @@
-package com.example.myappdemo.Utils;
+package com.example.myappdemo.zing.Utils;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -11,7 +11,7 @@ import android.view.ViewGroup;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 
-import com.example.myappdemo.R;
+import com.example.myappdemo.zing.R;
 
 public class MyUtils {
 	/*
@@ -58,54 +58,101 @@ public class MyUtils {
 		return data;
 	}
 	
-	public static List<Map<String, Object>> getData2() {
+	public static List<Map<String, Object>> getData2_1() {
 		List<Map<String, Object>> data = new ArrayList<Map<String, Object>>();
 
 		Map<String, Object> item1 = new HashMap<String, Object>();
-		item1.put("txt1", "区域");
-		item1.put("txt2", "不限");
+		item1.put("txt1", "链接设定");
+//		item1.put("txt2", "不限");
 		item1.put("imgEnd", R.drawable.aio_tips_arrow_gray);
 		data.add(item1);
 
 		item1 = new HashMap<String, Object>();
-		item1.put("txt1", "类型");
-		item1.put("txt2", "不限");
+		item1.put("txt1", "初始参数设定");
+//		item1.put("txt2", "不限");
 		item1.put("imgEnd", R.drawable.aio_tips_arrow_gray);
 		data.add(item1);
-
+		
 		item1 = new HashMap<String, Object>();
-		item1.put("txt1", "价格");
-		item1.put("txt2", "不限");
+		item1.put("txt1", "获取实验信息");
 		item1.put("imgEnd", R.drawable.aio_tips_arrow_gray);
 		data.add(item1);
-
-		item1 = new HashMap<String, Object>();
-		item1.put("txt1", "特色");
-		item1.put("txt2", "不限");
-		item1.put("imgEnd", R.drawable.aio_tips_arrow_gray);
-		data.add(item1);
-
-		item1 = new HashMap<String, Object>();
-		item1.put("txt1", "环线");
-		item1.put("txt2", "不限");
-		item1.put("imgEnd", R.drawable.aio_tips_arrow_gray);
-		data.add(item1);
-
-		item1 = new HashMap<String, Object>();
-		item1.put("txt1", "地铁");
-		item1.put("txt2", "不限");
-		item1.put("imgEnd", R.drawable.aio_tips_arrow_gray);
-		data.add(item1);
-
-		item1 = new HashMap<String, Object>();
-		item1.put("txt1", "装修状况");
-		item1.put("txt2", "不限");
-		item1.put("imgEnd", R.drawable.aio_tips_arrow_gray);
-		data.add(item1);
+//
+//		item1 = new HashMap<String, Object>();
+//		item1.put("txt1", "特色");
+////		item1.put("txt2", "不限");
+//		item1.put("imgEnd", R.drawable.aio_tips_arrow_gray);
+//		data.add(item1);
+//
+//		item1 = new HashMap<String, Object>();
+//		item1.put("txt1", "环线");
+////		item1.put("txt2", "不限");
+//		item1.put("imgEnd", R.drawable.aio_tips_arrow_gray);
+//		data.add(item1);
+//
+//		item1 = new HashMap<String, Object>();
+//		item1.put("txt1", "地铁");
+////		item1.put("txt2", "不限");
+//		item1.put("imgEnd", R.drawable.aio_tips_arrow_gray);
+//		data.add(item1);
+//
+//		item1 = new HashMap<String, Object>();
+//		item1.put("txt1", "装修状况");
+////		item1.put("txt2", "不限");
+//		item1.put("imgEnd", R.drawable.aio_tips_arrow_gray);
+//		data.add(item1);
 
 		return data;
 	}
 
+	public static List<Map<String, Object>> getData2_2() {
+		List<Map<String, Object>> data = new ArrayList<Map<String, Object>>();
+
+		Map<String, Object> item1 = new HashMap<String, Object>();
+		item1.put("txt1", "摄像头设定");
+//		item1.put("txt2", "不限");
+		item1.put("imgEnd", R.drawable.aio_tips_arrow_gray);
+		data.add(item1);
+
+		item1 = new HashMap<String, Object>();
+		item1.put("txt1", "打开摄像头");
+//		item1.put("txt2", "不限");
+		item1.put("imgEnd", R.drawable.aio_tips_arrow_gray);
+		data.add(item1);
+
+//		item1 = new HashMap<String, Object>();
+//		item1.put("txt1", "价格");
+////		item1.put("txt2", "不限");
+//		item1.put("imgEnd", R.drawable.aio_tips_arrow_gray);
+//		data.add(item1);
+//
+//		item1 = new HashMap<String, Object>();
+//		item1.put("txt1", "特色");
+////		item1.put("txt2", "不限");
+//		item1.put("imgEnd", R.drawable.aio_tips_arrow_gray);
+//		data.add(item1);
+//
+//		item1 = new HashMap<String, Object>();
+//		item1.put("txt1", "环线");
+////		item1.put("txt2", "不限");
+//		item1.put("imgEnd", R.drawable.aio_tips_arrow_gray);
+//		data.add(item1);
+//
+//		item1 = new HashMap<String, Object>();
+//		item1.put("txt1", "地铁");
+////		item1.put("txt2", "不限");
+//		item1.put("imgEnd", R.drawable.aio_tips_arrow_gray);
+//		data.add(item1);
+//
+//		item1 = new HashMap<String, Object>();
+//		item1.put("txt1", "装修状况");
+////		item1.put("txt2", "不限");
+//		item1.put("imgEnd", R.drawable.aio_tips_arrow_gray);
+//		data.add(item1);
+
+		return data;
+	}
+	
 	public static List<Map<String, Object>> getData3() {
 		List<Map<String, Object>> data = new ArrayList<Map<String, Object>>();
 

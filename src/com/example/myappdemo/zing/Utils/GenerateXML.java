@@ -1,4 +1,4 @@
-package com.example.myappdemo.Utils;
+package com.example.myappdemo.zing.Utils;
 
 import android.content.Context;
 import android.util.Log;
@@ -6,7 +6,7 @@ import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.SimpleAdapter;
 
-import com.example.myappdemo.R;
+import com.example.myappdemo.zing.R;
 
 public class GenerateXML {
 	public static int genLinearLayoutItems(LinearLayout linearLayout, SimpleAdapter simpleAdapter, Context context) {
