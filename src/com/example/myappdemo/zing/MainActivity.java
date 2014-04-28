@@ -22,7 +22,7 @@ public class MainActivity extends Activity {
 	private List<String>  titleList = new ArrayList<String>();
 	private List<View> viewList = new ArrayList<View>();
 	private ViewPager viewPager;//ViewPager 
-	private LinearLayout ll1, ll2_1, ll2_2, ll3, ll4;
+	private LinearLayout ll1, ll2_1, ll2_2, ll3, ll4_1, ll4_2;
 	private PagerAdapter pagerAdapter;//Adapter for viewpager 
 	private SimpleAdapter simpleAdapter1, simpleAdapter2_1, simpleAdapter2_2, simpleAdapter3, simpleAdapter4_1, simpleAdapter4_2;
 	
@@ -68,7 +68,8 @@ public class MainActivity extends Activity {
 		ll2_1 = (LinearLayout) page2.findViewById(R.id.linearLayout1);
 		ll2_2 = (LinearLayout) page2.findViewById(R.id.linearLayout2);
 		ll3 = (LinearLayout) page3.findViewById(R.id.linearLayout1);
-		ll4 = (LinearLayout) page4.findViewById(R.id.linearLayout1);
+		ll4_1 = (LinearLayout) page4.findViewById(R.id.linearLayout1);
+		ll4_2 = (LinearLayout) page4.findViewById(R.id.linearLayout2);
 		
 				
 		/*
@@ -124,8 +125,8 @@ public class MainActivity extends Activity {
 		GenerateXML.genLinearLayoutItems(ll2_1, simpleAdapter2_1, MainActivity.this);
 		GenerateXML.genLinearLayoutItems(ll2_2, simpleAdapter2_2, MainActivity.this);
 		GenerateXML.genLinearLayoutItems(ll3, simpleAdapter3, MainActivity.this);
-		GenerateXML.genLinearLayoutItems(ll4, simpleAdapter4_1, MainActivity.this);
-		GenerateXML.genLinearLayoutItems(ll4, simpleAdapter4_2, MainActivity.this);
+		GenerateXML.genLinearLayoutItems(ll4_1, simpleAdapter4_1, MainActivity.this);
+		GenerateXML.genLinearLayoutItems(ll4_2, simpleAdapter4_2, MainActivity.this);
 	
 		/*
 		 *  set adapter
